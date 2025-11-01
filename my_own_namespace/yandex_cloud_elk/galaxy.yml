@@ -1,0 +1,6 @@
+namespace: my_own_namespace
+name: yandex_cloud_elk
+version: 1.0.0
+authors: ["Egor @n0rthf1ght3r"]
+license: MIT
+readme: README.md

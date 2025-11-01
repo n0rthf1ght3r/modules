@@ -1,0 +1,9 @@
+---
+- name: Use role from collection
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  vars:
+    ansible_python_interpreter: "{{ ansible_playbook_python }}"
+  roles:
+    - role: my_own_namespace.yandex_cloud_elk.my_single_task

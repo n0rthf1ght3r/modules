@@ -1,0 +1,12 @@
+---
+- name: Test my_own_module
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  vars:
+    ansible_python_interpreter: "{{ ansible_playbook_python }}"
+  tasks:
+    - name: Create file with my_own_module
+      my_own_module:
+        path: /tmp/ans_hw6.txt
+        content: "first run"
